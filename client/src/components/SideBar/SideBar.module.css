@@ -1,0 +1,50 @@
+.slidebar{
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  animation: slide 0.5s linear;
+
+}
+
+@keyframes slide {
+  from{
+    left: -500px;
+  }
+  to {
+    left:0px
+  }
+}
+
+.close{
+  position: absolute;
+  left:220px;
+  top: 0;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 665px) {
+  .slidebar{
+    position: fixed;
+  }
+  .hide{
+    position: fixed;
+    left: -500px;
+    animation: slide2 0.5s linear;
+  }
+}
+
+@keyframes slide2 {
+  from{
+    left: 0px;
+  }
+  to{
+    left: -500px;
+  }
+}
+
+
